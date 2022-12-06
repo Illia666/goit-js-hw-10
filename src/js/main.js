@@ -33,7 +33,7 @@ function getCountries(name) {
       if (data.length > 10) {
         onToManyCountries();
       }
-      if (data.length > 1 && data.length < 10) {
+      if (data.length > 1 && data.length <= 10) {
         renderCountryList(refs.countriesList, data);
       }
       if (data.length === 1) {

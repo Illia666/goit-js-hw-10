@@ -26,8 +26,7 @@ function markupTitle(flag, name) {
   }
   
   function markupDefinitions(rest) {
-    let html = '';
-    html +=
+    const html =
       addDefinition('capital', rest['capital']) +
       addDefinition('population', rest['population']) +
       addDefinition('languages', rest['languages']);
